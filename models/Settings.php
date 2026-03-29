@@ -19,10 +19,10 @@ class Settings extends Model {
     public $settingsFields = 'fields.yaml';
 
     public function __construct() {
-        $this->attributeNames = [
+        parent::__construct($attributes);
+    	$this->attributeNames = [
             'mode' => Lang::get('martin.ssologin::lang.settings.mode'),
-        ];
-        parent::__construct();
+        ]; 
     }
 
     public function getUseConnectionOptions() {
