@@ -7,7 +7,7 @@ use Martin\Adminer\Classes\OctoberAdminerHelper;
 
 class Settings extends Model {
 
-    use \October\Rain\Database\Traits\Validation;
+    use \Winter\Storm\Database\Traits\Validation;
 
     public $rules = [
         'mode' => 'required',
